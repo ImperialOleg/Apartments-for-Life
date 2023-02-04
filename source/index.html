@@ -23,6 +23,19 @@
   <main class="main-container">
     <section class="apartmentcomplex">
       <h1 class="visually-hidden">Микрогород Яркий</h1>
+      <div class="apartmentcomplex__presentation">
+        <img class="apartmentcomplex__presentation-foto" src="/img/fotoapartment.png" width="242px" height="72px"
+          alt="Микрогород Яркий">
+        <h2 class="apartmentcomplex__presentation-title">Встречайте
+          новые яркие кварталЫ!</h2>
+        <p class="apartmentcomplex__presentation-description">Здесь так же душевно и уютно, как в старом добром «Ярком»,
+          но ещё лучше, современнее и интереснее.</p>
+        <button class="apartmentcomplex__presentation-button" type="button">Посмотреть квартиры</button>
+      </div>
+      <div class="apartmentcomplex__presentation-picture">
+      </div>
+      <div class="apartmentcomplex__presentation-item">
+      </div>
     </section>
     <section class="presentation">
       <div class="presentation__district">
@@ -44,26 +57,45 @@
         <li class="picture__item">
           <img class="picture__foto" src="/img/advantage1.jpg" width="350px" height="280px"
             alt="Фотография Безопасный двор">
+          <div class="picture__information">
+            <p class="picture__description">Безопасные дворы <br>без машин</p>
+          </div>
         <li>
         <li class="picture__item">
           <img class="picture__foto" src="/img/advantage2.jpg" width="350px" height="280px"
             alt="Фотография Озеленение двора">
+          <div class="picture__information picture__information--size">
+            <p class="picture__description">Трёхуровневое озеленение и двор, цветущий круглый
+              год </p>
+          </div>
         <li>
         <li class="picture__item">
           <img class="picture__foto" src="/img/advantage3.jpg" width="350px" height="280px"
             alt="Фотография Игровая площадка">
+          <div class="picture__information">
+            <p class="picture__description">Игровые пространства для разного возраста</p>
+          </div>
         <li>
         <li class="picture__item">
           <img class="picture__foto" src="/img/advantage4.jpg" width="350px" height="280px"
             alt="Фотография Зона отдыха">
+          <div class="picture__information">
+            <p class="picture__description">Зоны отдыха <br>во дворах-парках</p>
+          </div>
         <li>
         <li class="picture__item">
           <img class="picture__foto" src="/img/advantage5.jpg" width="350px" height="280px"
             alt="Фотография Дизайнерские подъезды">
+          <div class="picture__information">
+            <p class="picture__description">Дизайнерские подъезды</p>
+          </div>
         <li>
         <li class="picture__item">
           <img class="picture__foto" src="/img/advantage6.jpg" width="350px" height="280px"
             alt="Фотография беговая дорожка">
+          <div class="picture__information">
+            <p class="picture__description">Спорт прямо<br> во дворе</p>
+          </div>
         <li>
       </ul>
     </section>
@@ -94,17 +126,30 @@
         <li class="benefits__item">
           <img class="benefits__foto" src="/img/fotobenefits1.jpg" width="350px" height="280px"
             alt="Фотография планировки">
+          <div class="benefits__information">
+            <p class="benefits__description">Эффективные планировки</p>
+          </div>
         </li>
         <li class="benefits__item">
           <img class="benefits__foto" src="/img/fotobenefits2.jpg" width="350px" height="280px"
             alt="Фотография потолки">
+          <div class="benefits__information">
+            <p class="benefits__description">Высокие потолки</p>
+          </div>
         </li>
         <li class="benefits__item">
           <img class="benefits__foto" src="/img/fotobenefits3.jpg" width="350px" height="280px"
             alt="Фотография стеклопакеты">
+          <div class="benefits__information">
+            <p class="benefits__description">Двухкамерные стеклопакеты</p>
+          </div>
         </li>
         <li class="benefits__item">
           <img class="benefits__foto" src="/img/fotobenefits4.jpg" width="1110px" height="350px" alt="Фотография зала">
+          <div class="benefits__style">
+            <p class="benefits__description-style">Квартиры <br>с чистовой отделкой</p>
+            <button class="benefits__button" type="button">Посмотреть квартиры</button>
+          </div>
         </li>
         <ul>
     </section>
@@ -169,35 +214,68 @@
           alt="Фотография жилого квартала">
       </div>
     </section>
+    <section class="contacts">
+      <div class="contacts__information">
+        <div class="contacts__suggestion">
+          <h3 class="contacts__suggestion-title">Хочу жить <br>в новом квартале!</h3>
+          <p class="contacts__suggestion-description">Оставьте свои контакты в форме и мы свяжемся с вами, поможем
+            выбрать квартиру и расскажем, как сделать переезд ещё проще.
+          </p>
+        </div>
+        <div class="contacts__form">
+          <form class="contacts__form-data" action="#" method="post">
+            <label>
+              <input class="contacts__form-name" name="name" placeholder="Имя">
+            </label>
+            <label>
+              <input class="contacts__form-name" name="name" placeholder="Телефон">
+            </label>
+            <button class="contacts__form-button" type="submit">Отправить</button>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
-    <div class="footer-nav__social">
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#" aria-label="В контакте">
-            <svg class="footer-nav__vk" role="img" focusable="false" width="24" height="24">
-              <use xlink:href="/img/sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-          <span class="visually-hidden"> Социальная сеть в контакте</span>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#" aria-label="Телеграмм">
-            <svg class="footer-nav__telegram" role="img" focusable="false" width="22" height="18">
-              <use xlink:href="/img/sprite.svg#icon-telegram"></use>
-            </svg>
-          </a>
-          <span class="visually-hidden"> Социальная сеть телеграмм</span>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#" aria-label="Ютуб">
-            <svg class="footer-nav__youtube" role="img" focusable="false" width="20" height="14">
-              <use xlink:href="/img/sprite.svg#icon-youtube"></use>
-            </svg>
-          </a>
-          <span class="visually-hidden"> Социальная сеть ютуб</span>
-        </li>
-      </ul>
+    <div class="footer-nav">
+      <div class="footer-nav__logo">
+        <img class="footer-nav__logo-foto" src="/img/fotologo.png" width="221px" height="71px" alt="Микрогород Яркий">
+      </div>
+      <div class="footer-nav__social">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#" aria-label="Фейсбук">
+              <svg class="footer-nav__f" role="img" focusable="false" width="46" height="46">
+                <use xlink:href="/img/sprite.svg#icon-f"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden"> Социальная сеть фейсбук</span>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#" aria-label="Инстаграм">
+              <svg class="footer-nav__telegram" role="img" focusable="false" width="46" height="46">
+                <use xlink:href="/img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden"> Социальная сеть инстаграм</span>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#" aria-label="В контакте">
+              <svg class="footer-nav__youtube" role="img" focusable="false" width="46" height="46">
+                <use xlink:href="/img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden"> Социальная сеть в контакте</span>
+          </li>
+        </ul>
+        <a class="footer-nav__phone" href="tel:+7(347)225-08-37">+7(347)225-08-37</a>
+        <p class="footer-nav__company">Застройщик ООО Специализированный застройщик «АгроСтройИнвест».</p>
+        <p class="footer-nav__company">Микрогород «Яркий». Проектная декларация на сайте https://наш.дом.рф/.</p>
+        <p class="footer-nav__privacy">Политика конфиденциальности</p>
+      </div>
+      <div class="footer-nav__slogan">
+        <img class="footer-nav__slogan-foto" src="/img/fotoslogan.png" width="268px" height="80px"
+          alt="Слоган Третий тест скоро переезд">
+      </div>
     </div>
   </footer>
 </body>
