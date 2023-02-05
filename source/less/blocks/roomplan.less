@@ -1,17 +1,31 @@
 .roomplan {
-  width: 1515px;
+  position: relative;
   margin-top: 110px;
-  margin-left: 405px;
+  padding-bottom: 73px;
 }
 
 .roomplan__title {
-  font-family: 'Geometria';
-  font-style: normal;
   font-weight: 800;
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
-  color: #82B428;
+  color: #82b428;
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 60px;
+  margin-left: 410px;
+}
+
+.roomplan__presentation {
+  display: flex;
+  flex-direction: row;
+  padding: 0 410px;
+  gap: 25px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .roomplan__information {
@@ -19,56 +33,148 @@
   min-height: 547px;
   display: flex;
   flex-direction: row;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.roomplan__information::after {
+  content: "";
+  width: 683px;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 35%;
+  left: 34%;
 }
 
 .roomplan__price {
-  padding-top: 70px;
+  padding-top: 68px;
+  margin-right: 39px;
+  padding-left: 6px;
 }
 
 .roomplan__price-information {
-  font-family: 'Geometria';
   font-style: italic;
   font-weight: 400;
   font-size: 17px;
   line-height: 23px;
   color: #000000;
-}
-
-.roomplan__price-information {
+  margin: 0;
   margin-left: 40px;
 }
 
+.roomplan__price-cost {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #2b2422;
+  margin: 0;
+  margin-left: 37px;
+  margin-top: 37px;
+}
+
+.roomplan__price-value {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b2422;
+  margin: 0;
+  margin-left: 37px;
+}
+
 .roomplan__description {
-  padding-top: 70px;
+  padding-top: 79px;
+  margin-right: 60px;
 }
 
 .roomplan__description-flat {
-  font-family: 'Geometria';
-  font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 30px;
-  color: #2B2422;
+  color: #2b2422;
   margin: 0;
+  margin-bottom: 43px;
 }
 
 .roomplan__description-plan {
-  max-width: 247px;
-  font-family: 'Geometria';
-  font-style: normal;
+  max-width: 307px;
   font-weight: 400;
   font-size: 17px;
   line-height: 23px;
   color: #000000;
+  margin-bottom: 23px;
 }
 
 .roomplan__description-button {
   width: 241px;
   height: 51px;
-  border-radius: 30px;
   border: none;
   cursor: pointer;
+  background: linear-gradient(34.66deg, #82b428 16.88%, #c5d210 76%);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.roomplan__home {
+  margin-top: 76px;
+  display: flex;
+  gap: 56px;
+}
+
+.roomplan__home-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roomplan__home-info {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #2b2422;
+  margin: 0;
+}
+
+.roomplan__home-number {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b2422;
+  margin: 0;
+}
+
+.roomplan__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  border: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.roomplan__item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  cursor: pointer;
+
+  &--current {
+    background-color: #2da3dc;
+  }
 }
